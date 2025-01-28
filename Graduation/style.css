@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
+  background-color: #f7f7f7;
+}
+/* Glowing text animation */
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px red; color: red; }
+            25% { text-shadow: 0 0 5px green; color: green; }
+            50% { text-shadow: 0 0 5px blue; color: blue; }
+            75% { text-shadow: 0 0 5px yellow; color: yellow; }
+            100% { text-shadow: 0 0 5px red; color: red; }
+        }
+        h1{
+            animation: glow 7s infinite;
+        }
+          h1:hover {
+            transform: translateX(50px);
+        }
+
+.container {
+  background-color: #EFB036;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 8px;
+}
+ /* Glowing text animation */
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px red; color: red; }
+            25% { text-shadow: 0 0 5px green; color: green; }
+            50% { text-shadow: 0 0 5px blue; color: blue; }
+            75% { text-shadow: 0 0 5px yellow; color: yellow; }
+            100% { text-shadow: 0 0 5px red; color: red; }
+        }
+        .form .date{
+            animation: glow 4s infinite;
+        }
+          .date:hover {
+            transform: translateX(20px);
+        }
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  transition-property: background-color;
+  transition-duration: 3000ms;
+}
+
+button:hover {
+  background-color: #CBA35C;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
