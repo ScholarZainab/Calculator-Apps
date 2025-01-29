@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff7f0;
+}
+/* Glowing text animation */
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px red; color: red; }
+            25% { text-shadow: 0 0 5px green; color: green; }
+            50% { text-shadow: 0 0 5px blue; color: blue; }
+            75% { text-shadow: 0 0 5px yellow; color: yellow; }
+            100% { text-shadow: 0 0 5px red; color: red; }
+        }
+        h1{
+            animation: glow 7s infinite;
+        }
+          h1:hover {
+            transform: translateX(50px);
+        }
+
+
+.container {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 5px;
+}
+ /* Glowing text animation */
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px red; color: red; }
+            25% { text-shadow: 0 0 5px green; color: green; }
+            50% { text-shadow: 0 0 5px blue; color: blue; }
+            75% { text-shadow: 0 0 5px yellow; color: yellow; }
+            100% { text-shadow: 0 0 5px red; color: red; }
+        }
+        .form .date{
+            animation: glow 4s infinite;
+        }
+          .date:hover {
+            transform: translateX(20px);
+        }
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+button {
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  transition-property: background-color;
+  transition-duration: 3000ms;
+}
+
+button:hover {
+  background-color: #c44126;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0; /* Hidden by default for fade-in */
+  transition: opacity 0.5s ease; /* Smooth fade-in effect */
+}
+
+#result.hidden {
+  opacity: 0; /* Hidden state */
+}
+
+#result.visible {
+  opacity: 1; /* Visible state */
+}
+   <!---- Responsive layout design ----->
+    @media (max-width: 1104px) {
+    .container{
+        height: auto;
+        width: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+@media (max-width: 768px) {
+    .container {
+       height: auto;
+       width: auto;
+    }
+}
