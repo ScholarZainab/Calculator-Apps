@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>License/Certification Renewal Reminder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>License/Certification Renewal Reminder</h1>
+    <div class="form">
+      <label for="licenseName">License/Certification Name:</label>
+      <input type="text" id="licenseName" name="licenseName">
+      <label for="issueDate">Issue Date:</label>
+      <input type="date" id="issueDate" name="issueDate">
+      <label for="renewalPeriod">Renewal Period (in years):</label>
+      <input type="number" id="renewalPeriod" name="renewalPeriod" min="1" value="1">
+      <button id="calculateBtn">Calculate</button>
+    </div>
+    <div id="renewalInfo">
+      <p>Time to Renew: <span id="timeToRenew"></span></p>
+      <p>Days: <span id="daysCount">00</span></p>
+      <p>Hours: <span id="hoursCount">00</span></p>
+      <p>Minutes: <span id="minutesCount">00</span></p>
+      <p>Seconds: <span id="secondsCount">00</span></p>
+      <p id="licenseNameDisplay">License/Certification Name:</span>
+      <p id="issueDateDisplay">Issue Date:</span>
+      <p id="renewalDateDisplay">Next Renewal Date:</span>
+    </div>
+   <p> This App was coded by Zainab Akinola using Html, Css and Javascript</P>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

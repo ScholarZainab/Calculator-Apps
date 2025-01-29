@@ -1,0 +1,109 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+/* Glowing text animation */
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px red; color: red; }
+            25% { text-shadow: 0 0 5px green; color: green; }
+            50% { text-shadow: 0 0 5px blue; color: blue; }
+            75% { text-shadow: 0 0 5px yellow; color: yellow; }
+            100% { text-shadow: 0 0 5px red; color: red; }
+        }
+        h1{
+            animation: glow 7s infinite;
+        }
+          h1:hover {
+            transform: translateX(50px);
+        }
+
+.container {
+  background-color: #D5E7B5;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+ /* Glowing text animation */
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px red; color: red; }
+            25% { text-shadow: 0 0 5px green; color: green; }
+            50% { text-shadow: 0 0 5px blue; color: blue; }
+            75% { text-shadow: 0 0 5px yellow; color: yellow; }
+            100% { text-shadow: 0 0 5px red; color: red; }
+        }
+        .form .date{
+            animation: glow 4s infinite;
+        }
+          .date:hover {
+            transform: translateX(20px);
+        }
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 250px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+ transition: background-color 0.3s ease;
+  transition-property: background-color;
+  transition-duration: 3000ms;
+}
+button:hover{
+ background-color: white;
+}
+
+#renewalInfo {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 3px;
+}
+<!---- Responsive layout design ----->
+    @media (max-width: 1104px) {
+    .container{
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+@media (max-width: 768px) {
+    .container {
+       height: auto;
+       width: auto;
+    }
+}
